@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="http://example.com/favicon.png" />
+    <script src="index.js"></script>
+    <link
+      id="page_favicon"
+      href="./favicon.ico"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <title>Campo Minado</title>
+  </head>
+  <body>
+    <h1 id="title">Campo Minado</h1>
+    <h2 class="status"></h2>
+
+    <div class="choice-level-wrapper">
+      <h2>Escolha o nível do desafio:</h2>
+      <select name="type-game" id="typeGameSelect">
+        <option value="1">Iniciante (9 linhas, 9 colunas e 10 bombas)</option>
+        <option value="2">
+          Intermediario (16 linhas, 16 colunas e 40 bombas)
+        </option>
+        <option value="3">Avançado (16 linhas, 40 colunas e 99 bombas)</option>
+      </select>
+      <button class="button" onclick="newGame()">Jogar!</button>
+    </div>
+
+    <div class="board hidden"></div>
+    <a href="." class="button hidden">Novo Jogo</a>
+  </body>
+</html>
